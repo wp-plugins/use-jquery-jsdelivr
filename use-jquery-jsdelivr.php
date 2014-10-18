@@ -6,7 +6,7 @@ Donate link: additifstabac@free.fr
 Description: Charge les bibliothèques open source jQuery, jQuery-migrate et jQuery-masonry depuis le CDN de jsDelivr
 Author: luciole135
 Author URI: http://additifstabac.free.fr
-Version: 1.1
+Version: 1.1.1
 */
 function modify_jquery() {global $wp_scripts;
 	if (!is_admin()) {
@@ -16,9 +16,9 @@ function modify_jquery() {global $wp_scripts;
 		wp_deregister_script('jquery');
 		wp_deregister_script('jquery-migrate');
 		wp_deregister_script('masonry');
-		wp_enqueue_script('jquery', 'http://cdn.jsdelivr.net/jquery/'.$jquery_ver.'/jquery.min.js', false, $jquery_ver,true);
-		wp_enqueue_script('jquery-migrate', 'http://cdn.jsdelivr.net/jquery.migrate/'.$jquery_migrate_ver.'/jquery-migrate.min.js', false, $jquery_migrate_ver,true);
-		wp_enqueue_script('masonry', 'http://cdn.jsdelivr.net/masonry/'.$jquery_masonry_ver.'/masonry.min.js', false, $jquery_masonry_ver,true);
+		wp_enqueue_script('jquery', 'http://cdn.jsdelivr.net/jquery/'.$jquery_ver.'/jquery.min.js', false, null,true);
+		wp_enqueue_script('jquery-migrate', 'http://cdn.jsdelivr.net/jquery.migrate/'.$jquery_migrate_ver.'/jquery-migrate.min.js', false, null,true);
+		wp_enqueue_script('masonry', 'http://cdn.jsdelivr.net/masonry/'.$jquery_masonry_ver.'/masonry.min.js', false, null,true);
 		}
 }
 add_action('wp_enqueue_scripts', 'modify_jquery');
