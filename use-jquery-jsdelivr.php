@@ -6,7 +6,7 @@ Donate link: additifstabac@free.fr
 Description: Charge les bibliothèques open source jQuery, jQuery-migrate et jQuery-masonry depuis le CDN de jsDelivr
 Author: luciole135
 Author URI: http://additifstabac.free.fr
-Version: 1.1.1
+Version: 1.1.2
 */
 function modify_jquery() {global $wp_scripts;
 	if (!is_admin()) {
@@ -21,5 +21,5 @@ function modify_jquery() {global $wp_scripts;
 		wp_enqueue_script('masonry', 'http://cdn.jsdelivr.net/masonry/'.$jquery_masonry_ver.'/masonry.min.js', false, null,true);
 		}
 }
-add_action('wp_enqueue_scripts', 'modify_jquery');
+add_action('wp_enqueue_scripts', 'modify_jquery',9999);
 ?>
