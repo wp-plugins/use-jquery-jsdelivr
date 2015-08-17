@@ -8,7 +8,7 @@ Author: luciole135
 Author URI: http://additifstabac.free.fr
 Version: 1.2
 */
-function modify_jquery() {global $wp_scripts;
+function modify_jquery_luc() {global $wp_scripts;
 	if (!is_admin()) {
 		$jquery_ver = $wp_scripts->registered['jquery']->ver;
 		$jquery_migrate_ver = $wp_scripts->registered['jquery-migrate']->ver;
@@ -21,5 +21,5 @@ function modify_jquery() {global $wp_scripts;
 		wp_enqueue_script('masonry', 'https://cdn.jsdelivr.net/masonry/'.$jquery_masonry_ver.'/masonry.min.js', false, null,true);
 		}
 }
-add_action('wp_enqueue_scripts', 'modify_jquery',9999);
+add_action('wp_enqueue_scripts', 'modify_jquery_luc',9999);
 ?>
