@@ -3,7 +3,7 @@ Contributors: luciole135
 Tags: jsDelivr, cdn, keyCDN, jquery, jquery-migrate, Masonry, js, optimisation, speed, WordPress Performance
 Donate link: additifstabac@free.fr
 Requires at least: 3.9
-Tested up to: 4.3
+Tested up to: 4.4
 Stable tag: 1.2
 
 Loads the open source scripts jQuery, jQuery-migrate and Masonry from jsDelivr's CDN.
